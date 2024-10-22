@@ -1,5 +1,5 @@
-using Tyuiu.MolchankinaAP.Sprint1.Task3.V10.Lib;
-namespace Tyuiu.MolchankinaAP.Sprint1.Task3.V10.Test
+using Tyuiu.MolchankinaAS.Sprint1.Task3.V10.Lib;
+namespace Tyuiu.MolchankinaAS.Sprint1.Task3.V10.Test
 {
     [TestClass]
     public class DataServiceTest
