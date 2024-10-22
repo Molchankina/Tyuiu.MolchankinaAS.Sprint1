@@ -29,17 +29,12 @@ class Program
         Console.WriteLine("***************************************************************************");
         Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
         Console.WriteLine("***************************************************************************");
+        double x = Convert.ToDouble(Console.ReadLine());
+        Console.WriteLine(x + " руб.");
         Console.WriteLine("***************************************************************************");
         Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
         Console.WriteLine("***************************************************************************");
-
-        double x;
-        Console.WriteLine("Введите десятичное число:");
-        x = Convert.ToDouble(Console.ReadLine());
-        double amount = ds.NumberToMoney(x);
-        int rub = Convert.ToInt32(amount);
-        int kop = Convert.ToInt32((amount - rub) * 100);
-        Console.WriteLine($"{rub} руб. {kop} коп.");
-        Console.ReadKey();
+        Console.WriteLine(x + " руб. " + "- " + "это " + Math.Floor(x) + "руб. " + Math.Round((x - Math.Floor(x)) * 100) + " коп.");
+        Console.ReadLine();
     }
 }
