@@ -21,20 +21,15 @@ class Program
         Console.WriteLine("* Написать программу, которая преобразует введенное с клавиатуры дробное  *");
         Console.WriteLine("* число в денежный формат.                                                *");
         Console.WriteLine("*                                                                         *");
-        //Console.WriteLine(Math.Floor(23.6));
-        //double x;
-        //x = Convert.ToDouble(Console.ReadLine());
-        //Console.WriteLine(x + " руб. " + "- " + "это " + Math.Floor(x) + "руб. " + Math.Round((x - Math.Floor(x))*100) + " коп.");
-        //(x + " руб. " + "- " + "это " + Math.Floor(x) + "руб. " + Math.Round((x - Math.Floor(x)) * 100) + " коп.");
         Console.WriteLine("***************************************************************************");
         Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
         Console.WriteLine("***************************************************************************");
         double x = Convert.ToDouble(Console.ReadLine());
-        Console.WriteLine(x + " руб.");
+        Console.WriteLine("Введите дробное число -> " + x);
         Console.WriteLine("***************************************************************************");
         Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
         Console.WriteLine("***************************************************************************");
-        Console.WriteLine(x + " руб. " + "- " + "это " + Math.Floor(x) + "руб. " + Math.Round((x - Math.Floor(x)) * 100) + " коп.");
+        Console.WriteLine(x + " руб. " + "- " + "это " + Math.Floor(x) + " руб. " + Math.Round((x - Math.Floor(x)) * 100) + " коп.");
         Console.ReadLine();
     }
 }
