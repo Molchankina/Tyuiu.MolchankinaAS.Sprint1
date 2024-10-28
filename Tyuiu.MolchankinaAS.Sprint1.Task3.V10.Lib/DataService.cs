@@ -5,11 +5,10 @@ namespace Tyuiu.MolchankinaAS.Sprint1.Task3.V10.Lib
     {
         public string NumberToMoney(double number)
         {
-            double r;
-            r = Math.Floor(number);
-            double k;
-            k = (number - Math.Floor(number));
-            return r + k;
+            int rubles = (int)number;
+            int kopeks = (int)Math.Round((number - rubles) * 100);
+
+            return $"{number:F1} руб. — это {rubles} руб. {kopeks} коп.";
         }
     }
 }
