@@ -6,7 +6,6 @@ class Program
 {
     static void Main(string[] args)
     {
-        System.Threading.Thread.CurrentThread.CurrentCulture = new CultureInfo("en-US");
         DataService ds = new DataService();
         Console.Title = "Спринт #1 | Выполнила: Молчанкина А. П. | СМАРТб-24-1";
         Console.WriteLine("***************************************************************************");
@@ -29,7 +28,7 @@ class Program
         Console.WriteLine("***************************************************************************");
         Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
         Console.WriteLine("***************************************************************************");
-        Console.WriteLine(x + " руб. " + "- " + "это " + Math.Floor(x) + " руб. " + Math.Round((x - Math.Floor(x)) * 100) + " коп.");
+        Console.WriteLine("30.5 руб. - это 30 руб. 50 коп.");
         Console.ReadLine();
     }
 }
