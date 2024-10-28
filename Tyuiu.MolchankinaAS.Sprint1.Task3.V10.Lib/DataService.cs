@@ -8,7 +8,7 @@ namespace Tyuiu.MolchankinaAS.Sprint1.Task3.V10.Lib
             int rubles = (int)number;
             int kopeks = (int)Math.Round((number - rubles) * 100);
 
-            return $"{number:F1} руб. — это {rubles} руб. {kopeks} коп.";
+            return $"{number:F1} руб. - это {rubles} руб. {kopeks} коп.";
         }
     }
 }
